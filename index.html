@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Britt's Weather API</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Brittany's Weather API</h1>
+    <div class="container">
+      <div class="row d-flex justify-content-center py-5">
+        <div class="col-md-8 col-lg-6 col-xl-5">
+          <div class="card text-body" style="border-radius: 35px">
+            <div class="card-body p-4">
+              <div class="d-flex">
+                <h6 id="city" class="flex-grow-1">City</h6>
+                <h6 id="date">Date</h6>
+              </div>
+              <div class="d-flex flex-column text-center mt-5 mb-4">
+                <h6 id="temperature" class="display-4 mb-0 font-weight-bold">
+                  Temperature
+                </h6>
+                <span id="conditions" class="small" style="color: #868b94"
+                  >Conditions</span
+                >
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="flex-grow-1" style="font-size: 1rem">
+                  <div>
+                    <i class="fas fa-arrow-up fa-fw" style="color: #868b94"></i>
+                    <span id="tempHigh" class="ms-1">High Temp</span>
+                  </div>
+                  <div>
+                    <i
+                      class="fas fa-arrow-down fa-fw"
+                      style="color: #868b94"
+                    ></i>
+                    <span id="tempLow" class="ms-1">Low Temp</span>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src= "https://static.vecteezy.com/system/resources/previews/018/754/507/original/thermometer-icon-in-gradient-colors-temperature-signs-illustration-png.png" alt="thermometer-icon-in-gradient-colors-temperature-signs-illustration-png"
+                    width="40px"
+                    height="80px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center py-3">
+        <div class="col-md-8 col-lg-6 col-xl-5">
+          <div class="form-group">
+            <label for="zip">Enter Zip Code:</label>
+            <input type="text" id="zip" class="form-control" name="zip" />
+            <button id="getWeather" class="btn btn-primary mt-2">
+              Get Weather
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="api.js"></script>
+  </body>
+</html>

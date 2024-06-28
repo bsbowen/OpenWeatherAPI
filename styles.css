@@ -1,0 +1,26 @@
+body {
+    background-image: url(https://img.freepik.com/free-vector/background-monsoon-season_52683-115103.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: magenta;
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(240, 248, 255, 0.533);
+}
+
+.card {
+    background-color:  rgba(255, 255, 255, 0.573);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#conditions.small{
+    font-size: 20px;
+
+
+}
